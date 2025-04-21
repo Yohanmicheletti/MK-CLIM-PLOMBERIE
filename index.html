@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MK Clim & Plomberie - Tarbes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      background: #f4f8fb;
+      color: #333;
+    }
+    header, footer {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+      border-radius: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      margin-top: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease-in;
+    }
+    h1, h2 {
+      color: #0077b6;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    .services li::before {
+      content: "✔ ";
+      color: #0077b6;
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      margin-top: 20px;
+      background: #0077b6;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #005f87;
+    }
+    .call-button a {
+      display: inline-block;
+      margin: 20px 0;
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+    .call-button a:hover {
+      background-color: #1e7e34;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      height: 300px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="A_logo_for_a_company_named_MK_Clim_&_Plomberie_is_.png" alt="Logo MK Clim & Plomberie">
+    <div>
+      <h1>MK Clim & Plomberie - Tarbes</h1>
+      <nav>
+        <a href="#a-propos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#zone">Zone</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="a-propos">
+    <h2>À propos</h2>
+    <p>MK Clim & Plomberie est une entreprise artisanale basée à Tarbes. Nous proposons tous travaux de plomberie, chauffage et climatisation : du neuf à la rénovation, en passant par le dépannage et l’entretien.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos services</h2>
+    <ul>
+      <li>Travaux de plomberie (neuf et rénovation)</li>
+      <li>Dépannage plomberie</li>
+      <li>Installation de chauffage</li>
+      <li>Pose et mise en service de climatisation</li>
+      <li>Installation de pompe à chaleur</li>
+      <li>Entretien climatisation et chauffage</li>
+    </ul>
+  </section>
+
+  <section id="zone">
+    <h2>Zone d'intervention</h2>
+    <p>Intervention rapide à Tarbes et dans les Hautes-Pyrénées (65).</p>
+    <iframe src="https://www.google.com/maps?q=105+Avenue+du+R%C3%A9giment+de+Bigorre,+Tarbes&output=embed" allowfullscreen="" loading="lazy"></iframe>
+    <p>Adresse : 105 avenue du Régiment de Bigorre, 65000 Tarbes</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="call-button">
+      <a href="tel:+33635365083">Appeler MK Clim & Plomberie - 06 35 36 50 83</a>
+    </div>
+    <p>Email : <a href="mailto:mk.climplomberie@gmail.com">mk.climplomberie@gmail.com</a></p>
+    <form class="contact-form">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Adresse : 105 avenue du Régiment de Bigorre, Tarbes<br />
+    &copy; 2025 MK Clim & Plomberie - Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
